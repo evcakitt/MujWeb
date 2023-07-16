@@ -1,0 +1,620 @@
+body {
+  background-color: #94d462;
+  margin-top: 8px;
+  font-family: tahoma;
+  font-size: 1.2em;
+  line-height: 1.8em;
+  color: rgb(192, 0, 0);
+
+  /*velikost pisma deklarovano jeste v section - nemEnit*/
+}
+/*nastaveni pisma jako na strance v redaci pro textareu a imput tile a popis a formlulR objednani*/
+input,
+textarea {
+  font-family: tahoma;
+  font-size: 20px;
+  line-height: 30px;
+  color: rgb(192, 0, 0);
+  border-radius: 10px;
+}
+
+.hlavni {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: gray 1px 10px 40px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-position: 0px 264px;
+  background-image: url("img/pozadi_duha2.jpg");
+  background-repeat: repeat-y;
+  overflow: hidden;
+  margin-bottom: 2%;
+}
+
+/*hlavicka nadpis cesta zpet k sobe*/
+.cesta_k_sobe {
+  font-family: "Comic Sans MS";
+  font-size: 52px;
+  line-height: 60px;
+  position: relative;
+  top: 38px;
+  left: 25px;
+  width: 500px;
+  color: rgb(245, 255, 56);
+  text-shadow: rgb(131, 67, 250) 1px 2px 3px;
+}
+.zpet {
+  font-family: "Comic Sans MS";
+  font-size: 35px;
+  line-height: 45px;
+  color: rgb(245, 255, 56);
+  text-shadow: rgb(112, 41, 245) 1px 2px 3px;
+  position: relative;
+  top: 45px;
+  left: 55px;
+}
+.sobe {
+  font-family: "Comic Sans MS";
+  font-size: 35px;
+  line-height: 45px;
+  position: relative;
+  top: 50px;
+  left: 135px;
+  color: rgb(245, 255, 56);
+  text-shadow: rgb(98, 19, 245) 1px 2px 3px;
+}
+
+.header {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 215px;
+  background-color: rgb(157, 200, 219);
+  overflow: hidden;
+  background-image: url("img/kopretina4.jpg");
+  margin: 0px;
+}
+
+.article a:link {
+  color: rgb(192, 0, 0);
+  text-decoration: underline;
+}
+.article a:visited {
+  color: rgb(192, 0, 0);
+  text-decoration: underline;
+}
+.article a:active {
+  color: rgb(192, 0, 0);
+  text-decoration: underline;
+}
+.article a:hover {
+  text-shadow: gray 1px 2px 3px;
+}
+/*horní menu*/
+.okraj_menu {
+  padding: 10px;
+  margin: 10px;
+  display: inline;
+  border: solid 2px whitesmoke;
+  border-radius: 0.5rem;
+  position: relative;
+  top: -1px;
+}
+
+.horni_menu a {
+  padding: px;
+  text-decoration: none;
+  color: rgb(0, 84, 147);
+  border-radius: 10px;
+  margin: 0px;
+  font-family: "Comic Sans MS", Tahoma;
+  font-size: 1.1em;
+  line-height: 40px;
+}
+
+.stin {
+  height: 42px;
+}
+.horni_menu {
+  width: 100%;
+  background-color: rgb(166, 210, 239);
+  background-image: URL("img/horni_menu.jpg");
+  height: 49px;
+  text-align: center;
+}
+ul.menu {
+  padding: 5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.horni_menu a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: gray 1px 2px 3px;
+}
+/*menu - rozbalený seznam*/
+.pozadi_seznam {
+  background-image: url("img/aside2.jpg");
+  background-repeat: repeat-y;
+  background-position: right top;
+  box-shadow: gray 3px 4px 5px;
+  border-radius: 5px;
+  padding: 2px;
+  position: relative;
+  top: 45px;
+  left: -45px;
+  width: 9rem;
+  border: solid 1px whitesmoke;
+  display: none;
+}
+
+.rozbal {
+  position: absolute;
+  z-index: 3;
+  list-style-type: none;
+  text-align: left;
+}
+/*menu - rozbalený seznam konec*/
+.stin_pod_menu_roh {
+  background-image: url("img/stin_pod_menu5.jpg");
+  height: 42px;
+}
+
+.kartaSily {
+  border: dotted 3px rgb(0, 84, 147);
+  margin-right: 22px;
+  margin-left: 22px;
+  margin-top: 20px;
+  background-color: whitesmoke;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding-bottom: 7px;
+}
+
+.asideObr {
+  margin-top: 40%;
+  margin-bottom: 40%;
+}
+.okraje {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.aside ul {
+  position: relative;
+  top: 0px;
+  left: -10px;
+}
+
+.aside a {
+  font-size: 110%;
+}
+
+.aside a:visited {
+  color: rgb(0, 84, 147);
+}
+
+.aside a:hover {
+  color: white;
+}
+
+.aside {
+  width: 250px;
+  float: left;
+  clear: left;
+  background-image: url("img/aside2d.jpg");
+  background-repeat: repeat-y;
+  background-position: right top;
+  color: rgb(0, 84, 147);
+  /*color:rgb(0,0,153) ;*/
+  font-family: "Comic Sans MS", Tahoma;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(161, 205, 230);
+  margin-bottom: 1%;
+}
+
+.article {
+  margin-left: 270px;
+  margin-right: 20px;
+  font-size: 1em;
+  line-height: 1.6em;
+  /*border: dotted 3px rgb(132, 209, 240);*/
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  font-family: "Comic Sans MS";
+  color: rgb(192, 0, 0);
+}
+
+p {
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  font-family: "Comic Sans MS";
+  color: rgb(192, 0, 0);
+  text-indent: 50px;
+}
+/*aide -deni karty síly*/
+H1 {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Comic Sans MS";
+  margin-top: 20px;
+  text-shadow: gray 1px 2px 3px;
+  color: rgb(0, 84, 147);
+}
+
+.akce {
+  list-style-image: url("img/odrazka_50_50_mala.gif");
+  text-align: left;
+}
+
+.akce li a:link {
+  color: rgb(0, 84, 147);
+}
+.akce li a:visited {
+  color: rgb(0, 84, 147);
+}
+.akce li a:active {
+  color: white;
+}
+
+.akce li a:hover {
+  color: white;
+}
+.akce li {
+  margin-top: 5px;
+}
+
+.section {
+  width: 100%;
+  float: left;
+}
+
+.article img {
+  max-width: 100%;
+  height: auto;
+}
+
+.stin_pod_sect {
+  background-image: url("img/stin_pod_menu_section.jpg");
+  width: 1000px;
+  height: 42px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  float: left;
+}
+img {
+}
+
+.footer {
+  text-align: center;
+  border-top: 2px dotted rgb(166, 185, 254);
+  padding: 10px;
+  font-family: "Comic Sans MS", Tahoma;
+  font-size: 14px;
+  color: rgb(0, 84, 147);
+  background-color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+}
+
+/*uvodni stranka*/
+
+H1.anadpis {
+  font-size: 30px;
+  font-family: "Comic Sans MS", Tahoma;
+  margin-top: 0px;
+  color: rgb(192, 0, 0);
+  position: relative;
+  top: -10px;
+}
+H3,
+.nadpish3 {
+  font-size: 21px;
+  font-family: "Comic Sans MS", Tahoma;
+  margin-top: 0px;
+  color: rgb(192, 0, 0);
+  text-shadow: rgb(122, 38, 10) 0px 1px 2px;
+  text-align: center;
+}
+
+H2 {
+  font-size: 26px;
+  text-shadow: gray 1px 2px 3px;
+}
+
+/*nastaveni obrazky*/
+.stin {
+  margin: 0px;
+}
+
+.obr {
+}
+/*styly pro uvodni stranku*/
+
+#kurziva {
+  font-style: oblique;
+}
+.kurziva {
+  font-style: oblique;
+  font-size: 18px;
+}
+
+p#kurzivaVpravo {
+  font-style: oblique;
+  text-align: right;
+  color: rgb(192, 0, 0);
+  font-size: 90%;
+  margin: 0px;
+  line-height: 90%;
+}
+
+p#kurzivaVpravo1 {
+  text-align: right;
+  color: rgb(192, 0, 0);
+  font-size: 80%;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-right: 5px;
+  line-height: 90%;
+}
+
+.uvodniobr {
+  float: right;
+  margin-left: 2%;
+  margin-bottom: -5px;
+  max-width: 100%;
+  height: auto;
+}
+
+.dole {
+  margin-bottom: 2%;
+}
+
+.roh {
+  border-radius: 20px;
+  margin-right: 1%;
+  margin-top: 3%;
+}
+
+.stred {
+  text-align: center;
+}
+
+.uvodZvecit {
+  font-size: 120%;
+  font-weight: bold;
+  text-shadow: rgb(122, 38, 10) 0px 1px 1px;
+}
+
+.zvyrazneni {
+  border-bottom: dotted 1px rgb(192, 0, 0);
+  text-shadow: rgb(122, 38, 10) 0px 1px 1px;
+}
+
+.katerina_podpis {
+  position: relative;
+  top: 10px;
+  right: -10px;
+  text-align: right;
+  color: rgb(245, 255, 56);
+  text-shadow: rgb(122, 38, 10) 1px 2px 3px;
+  font-family: "Comic Sans MS";
+  font-size: 150%;
+}
+
+#zalom_radek {
+  word-wrap: break-all;
+}
+/*konec stylů pro uvodni stranku*/
+/*individualni terapie*/
+.objednani {
+  float: right;
+  border-radius: 10px;
+  background-color: rgb(157, 200, 219);
+  border: dotted 3px rgb(122, 38, 10);
+  padding: 2%;
+  width: 95%;
+  margin-bottom: 10px;
+}
+label {
+  font-size: 90%;
+}
+.terapie {
+  margin-top: 2%;
+  border: dotted 3px rgb(122, 38, 10);
+  border-radius: 10px;
+}
+.clearall {
+  clear: all;
+}
+.indterap {
+  border: dotted 3px rgb(122, 38, 10);
+  border-radius: 10px;
+}
+/*textarea u formulare objednej*/
+.objednej,
+.napis {
+  max-width: 98%;
+  min-width: 98%;
+  height: 10rem;
+}
+
+.odeslanif {
+  margin-top: 2%;
+  width: 5.5rem;
+  height: 3rem;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: justify;
+  font-family: "Comic Sans MS";
+  color: rgb(192, 0, 0);
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+/*uzdraveni cakary*/
+
+.kurzivaVlevo {
+  font-style: oblique;
+  text-align: left;
+  color: rgb(192, 0, 0);
+  font-size: 90%;
+  line-height: 140%;
+  margin: 0px;
+}
+
+/*o mne*/
+.table {
+  display: table;
+}
+.tr {
+  display: table-row;
+}
+.td {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 2rem;
+  padding-bottom: 2%;
+}
+
+/* navigacni talcitko v pripade mensiho rozliseni*/
+.horni_menu button {
+  background: whitesmoke;
+  border: 0;
+  color: rgb(0, 84, 147);
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  box-shadow: gray 3px 4px 5px;
+  border: dotted 1px rgb(0, 84, 147);
+  border-radius: 5px;
+  position: relative;
+  top: -45px;
+}
+
+@media screen and (max-width: 974px) {
+  .okraj_menu {
+    font-size: 10pt;
+    font-weight: bolder;
+    margin-left: 1px;
+  }
+  .katerina_podpis {
+    position: relative;
+    top: -15px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .okraj_menu {
+    font-size: 8pt;
+    font-weight: 900;
+    margin-left: 2px;
+  }
+  .katerina_podpis {
+    position: relative;
+    top: -15px;
+  }
+}
+
+.horni_menu button:hover,
+.horni_menu button:focus {
+  background: whitesmoke;
+}
+/*odkazy ve zmenšeném okně*/
+.horni_menu.zobrazit ul.menu {
+  display: block;
+  width: 10rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+  .horni_menu button {
+    display: block;
+  }
+  .menu li {
+    display: list-item;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .horni_menu ul.menu {
+    display: none;
+  }
+  .aside {
+    display: none;
+  }
+  .okraj_menu {
+    border: solid 2px whitesmoke;
+    border-radius: 0px;
+    background-image: url("img/aside2.jpg");
+    margin-left: -10px;
+    position: relative;
+    top: -45px;
+    z-index: 4;
+    border-radius: 5px;
+  }
+  .article {
+    margin-left: 10px;
+  }
+
+  .horni_menu {
+    height: 0px;
+  }
+  .hlavni {
+    background-position: left -270px top 0px;
+  }
+  .stin {
+    display: none;
+  }
+  .anadpis {
+    padding-top: 25px;
+  }
+  .header {
+    box-shadow: gray 1px 10px 20px;
+  }
+
+  .katerina_podpis {
+    position: relative;
+    top: -15px;
+  }
+}
+
+/*terapie*/
+.kapacita {
+  display: none;
+}
+@media screen and (max-width: 931px) {
+  #terapobr {
+    display: none;
+  }
+  .indi {
+    display: none;
+  }
+  .kapacita {
+    display: block;
+  }
+}
+
+/* navigacni talcitko v pripade mensiho rozliseni konec*/
+.objednani input {
+  background-color: silver;
+}
+#text {
+  background-color: silver;
+}
+
+.indi {
+  float: right;
+  padding-right: 10%;
+  position: relative;
+  top: 20px;
+}
