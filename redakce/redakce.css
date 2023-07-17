@@ -59,7 +59,7 @@ div.prihlasit {
   left: 0px;
   z-index: 8;
   background-color: white;
-  border: solid 5px white;
+  border: solid 5px whitesmoke;
   border-radius: 5px;
   box-shadow: black 2px 3px 4px;
 }
@@ -141,7 +141,7 @@ button {
 }
 .skryt {
   position: relative;
-  top: -10;
+  top: -10px;
   left: 0px;
 }
 
@@ -166,7 +166,7 @@ button {
   font-size: 36px;
   line-height: 40px;
   position: relative;
-  top: -230;
+  top: -230px;
   left: 700px;
   text-decoration: none;
   color: rgb(254, 255, 138);
