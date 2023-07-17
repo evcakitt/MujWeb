@@ -103,7 +103,6 @@ textarea {
 }
 
 .horni_menu a {
-  padding: px;
   text-decoration: none;
   color: rgb(0, 84, 147);
   border-radius: 10px;
@@ -291,8 +290,6 @@ H1 {
   left: 0px;
   float: left;
 }
-img {
-}
 
 .footer {
   text-align: center;
@@ -413,7 +410,7 @@ p#kurzivaVpravo1 {
 }
 
 #zalom_radek {
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 /*konec stylů pro uvodni stranku*/
 /*individualni terapie*/
@@ -434,8 +431,8 @@ label {
   border: dotted 3px rgb(122, 38, 10);
   border-radius: 10px;
 }
-.clearall {
-  clear: all;
+.zalomText {
+  clear: initial;
 }
 .indterap {
   border: dotted 3px rgb(122, 38, 10);
