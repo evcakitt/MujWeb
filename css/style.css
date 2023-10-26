@@ -1,0 +1,594 @@
+body {
+	background: #94d462;
+	font-size: 1.2em;
+	line-height: 1.8em;
+	font-family: "Comic Sans MS", tahoma;
+	color: rgb(192, 0, 0);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+/*nastavení barev a pozadí*/
+body,
+.article a:link,
+.article a:visited,
+.article a:active,
+input,
+textarea,
+.odeslani-formulare {
+	color: rgb(192, 0, 0)
+}
+
+
+.aside a:visited,
+.horni-menu a,
+.aside,
+.footer,
+.aside h2,
+.rozcestnik li a:link,
+.rozcestnik li a:visited,
+.horni-menu button {
+	color: rgb(0, 84, 147);
+}
+
+.horni-menu a:hover,
+.aside a:hover,
+.akce li a:active,
+.akce li a:hover {
+	color: white;
+}
+
+.karta-sily,
+.odeslanif,
+.horni-menu button {
+	background-color: whitesmoke;
+}
+
+/*nastavení zaoblení rohů*/
+.hlavni,
+.horni-menu a,
+.objednani-formular,
+.terapie,
+.indi-terapie,
+input,
+textarea {
+	border-radius: 10px;
+}
+
+/*celý obsah stránky je v containeru hlavni*/
+.hlavni {
+	max-width: 1000px;
+	min-width: 378px;
+	margin: 8px auto 2% auto;
+	box-shadow: gray 1px 10px 40px;
+	background: url("../img/pozadi_duha2.jpg") repeat-y 0px 264px white;
+	overflow: hidden;
+
+}
+
+
+/*hlavička stránek*/
+.header {
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	height: 215px;
+	overflow: hidden;
+	background: url("../img/kopretina4.jpg") rgb(157, 200, 219);
+	margin: 0px;
+}
+
+/*hlavicka a nadpis cesta zpet k sobe*/
+.cesta,
+.zpet,
+.sobe {
+	color: rgb(245, 255, 56);
+	text-shadow: rgb(131, 67, 250) 1px 2px 3px;
+}
+
+.cesta {
+	font-size: 52px;
+	line-height: 60px;
+	margin: 38px 0px 0px 28px;
+	width: 500px;
+
+}
+
+.zpet,
+.sobe {
+	font-size: 35px;
+	line-height: 45px;
+}
+
+.zpet {
+	margin: 6px 0px 0px 55px;
+}
+
+.sobe {
+	margin: 4px 0px 0px 135px;
+
+}
+
+
+/* nastavení odkazů v textu*/
+.article a:link,
+.article a:visited,
+.article a:active {
+	text-decoration: underline;
+}
+
+.article a:hover,
+.horni-menu a:hover,
+.aside h2,
+h2,
+h1 {
+	text-shadow: gray 1px 2px 3px;
+
+}
+
+.article a:hover {
+	color: red;
+}
+
+.horni-menu a,
+.horni-menu a:hover {
+	text-decoration: none;
+}
+
+/*horní menu*/
+.okraj-menu {
+	padding: 10px;
+	margin: 10px;
+	display: inline;
+	border: solid 2px whitesmoke;
+	border-radius: 0.5rem;
+	position: relative;
+	top: -1px;
+}
+
+.horni-menu a {
+	font-size: 1.1em;
+	line-height: 40px;
+	margin: 0px;
+
+}
+
+.horni-menu {
+	width: 100%;
+	background: URL("../img/horni_menu.jpg") rgb(166, 210, 239);
+	height: 49px;
+	text-align: center;
+}
+
+.stin {
+	height: 42px;
+	margin: 0px;
+}
+
+ul.menu {
+	padding: 5px;
+	margin: 0px 5px;
+
+}
+
+
+/* styl pro levý boční panel*/
+#kurziva {
+	font-style: oblique;
+
+}
+
+/*citat  na v bočním sloupci*/
+.kurziva {
+	font-style: oblique;
+	font-size: 18px;
+	margin: 0px;
+
+}
+
+cite {
+	font: inherit;
+	clear: both;
+}
+
+.karta-sily {
+	border: dotted 3px rgb(0, 84, 147);
+	margin: 20px 22px 0px 22px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	padding-bottom: 7px;
+}
+
+.aside-okraje-obrazku-na-vysku {
+	margin: 40% 0px;
+}
+
+/*okraje citátu*/
+.okraje {
+	margin: 0px 10%;
+
+}
+
+.aside a {
+	font-size: 110%;
+}
+
+
+.aside {
+	width: 250px;
+	float: left;
+	clear: left;
+	background: url("../img/aside2d.jpg") repeat-y right top rgb(161, 205, 230);
+	font-size: 17px;
+	line-height: 30px;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 1%;
+	overflow: hidden;
+}
+
+.article {
+	margin-left: 270px;
+	margin-right: 20px;
+	font-size: 1em;
+	line-height: 1.6em;
+	text-align: justify;
+}
+
+p {
+	font-size: 20px;
+	line-height: 32px;
+	text-align: justify;
+	text-indent: 50px;
+}
+
+/*aside -deni karty síly*/
+
+
+.rozcestnik {
+	list-style-image: url("../img/odrazka_50_50_mala.gif");
+	text-align: left;
+}
+
+/*rozcestník vlevo li linked a visited definováno u barev na začátku*/
+
+.rozcestnik li {
+	margin-top: 5px;
+}
+
+.section {
+	width: 100%;
+	float: left;
+}
+
+.article img,
+.uvodni-obrazek {
+	max-width: 100%;
+	height: auto;
+}
+
+.footer {
+	text-align: center;
+	border-top: 2px dotted rgb(166, 185, 254);
+	padding: 10px;
+	font-size: 14px;
+	background: white;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	overflow: hidden;
+}
+
+/*stylování obsahů stránek/
+/*uvodni stránka*/
+
+h1.hlavni-nadpis {
+	font-size: 30px;
+	margin-top: 0px;
+	position: relative;
+	top: -10px;
+	text-align: center;
+}
+
+h3,
+.podnadpis {
+	font-size: 21px;
+	margin-top: 0px;
+	text-shadow: rgb(122, 38, 10) 0px 1px 2px;
+	text-align: center;
+}
+
+
+h2.temata {
+	font-size: 26px !important;
+	margin-top: 20px;
+
+}
+
+
+.aside h2 {
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+
+/*styly pro uvodni stranku*/
+
+#kurziva-vpravo,
+#kurziva-citovany {
+	text-align: right;
+	line-height: 90%;
+}
+
+#kurziva-vpravo {
+	font-style: oblique;
+	font-size: 90%;
+	margin: 10px 0px;
+}
+
+
+#kurziva-citovany {
+	font-size: 80%;
+	margin: 8px 5px 0px 0px;
+}
+
+.uvodni-obrazek {
+	float: right;
+	margin: 0px 0px -5px 2%;
+
+}
+
+/*okraje obrázek*/
+.dole {
+	margin-bottom: 2%;
+}
+
+/*okraje obrázek*/
+.roh {
+	border-radius: 20px;
+	margin: 3% 1% 0px 0px;
+}
+
+/*vycentrovani textu*/
+.stred {
+	text-align: center;
+}
+
+.zvyrazneny-text,
+.zvyrazneni {
+	text-shadow: rgb(122, 38, 10) 0px 1px 1px;
+}
+
+.zvyrazneny-text {
+	font-size: 120%;
+	font-weight: bold;
+}
+
+/*tohle zvýraznění je použito až na dalších stránkách*/
+.zvyrazneni {
+	border-bottom: dotted 1px rgb(192, 0, 0);
+
+}
+
+.katerina-podpis {
+	text-align: right;
+	color: rgb(245, 255, 56);
+	text-shadow: rgb(122, 38, 10) 1px 2px 3px;
+	font-size: 150%;
+}
+
+/*dělení slov*/
+#zalom-radek {
+	word-wrap: break-word;
+}
+
+/*konec stylů pro uvodni stranku*/
+/*stránka terapie*/
+
+.objednani-formular,
+.terapie,
+.indi-terapie {
+	border: dotted 3px rgb(122, 38, 10);
+
+}
+
+.objednani-formular {
+	background-color: rgb(157, 200, 219);
+	padding: 2%;
+	margin: 0px auto 10px auto;
+}
+
+.terapie {
+	margin-top: 2%;
+}
+
+label {
+	font-size: 90%;
+}
+
+.zalom-text {
+	clear: initial;
+}
+
+/*textarea u formulare objednej*/
+
+input,
+textarea {
+	font-family: tahoma;
+	font-size: 20px;
+	line-height: 30px;
+
+}
+
+.objednej-popis,
+.napis {
+	max-width: 98%;
+	min-width: 98%;
+	height: 10rem;
+}
+
+/*tlačítko odeslání*/
+.odeslani-formulare {
+	margin-top: 2%;
+	width: 5.5rem;
+	height: 3rem;
+	font-size: 20px;
+	line-height: 32px;
+	border-radius: 5px;
+}
+
+/*strátnka o uzdravení - čakry*/
+/*
+.kurziva-vlevo {
+  font-style: oblique;
+  text-align: left;
+  font-size: 90%;
+  line-height: 140%;
+  margin: 0px;
+}
+*/
+/*o mne*/
+.table {
+	display: table;
+}
+
+.tr {
+	display: table-row;
+}
+
+.td {
+	display: table-cell;
+	vertical-align: middle;
+	padding-right: 2rem;
+	padding-bottom: 2%;
+}
+
+/* navigacni talcitko v pripade mensiho rozliseni*/
+.horni-menu button {
+	border: 0;
+	font-size: 30px;
+	cursor: pointer;
+	display: none;
+	box-shadow: gray 3px 4px 5px;
+	border: dotted 1px rgb(0, 84, 147);
+	border-radius: 5px;
+	position: relative;
+	top: -45px;
+}
+
+@media screen and (max-width: 974px) {
+	.okraj-menu {
+		font-size: 10pt;
+		font-weight: bolder;
+		margin-left: 1px;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+	.okraj-menu {
+		font-size: 8pt;
+		font-weight: 900;
+		margin-left: 2px;
+	}
+
+}
+
+.horni-menu button:hover,
+.horni-menu button:focus {
+	background: whitesmoke;
+}
+
+/*odkazy ve zmenšeném okně*/
+.horni-menu.zobrazit ul.menu {
+	display: block;
+	width: 10rem;
+	text-align: left;
+}
+
+@media screen and (max-width: 650px) {
+	.horni-menu button {
+		display: block;
+	}
+
+	.menu li {
+		display: list-item;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.horni-menu ul.menu {
+		display: none;
+	}
+
+	.aside {
+		display: none;
+	}
+
+	.okraj-menu {
+		border: solid 2px whitesmoke;
+		background-image: url("../img/aside2.jpg");
+		margin-left: -10px;
+		position: relative;
+		top: -45px;
+		z-index: 4;
+		border-radius: 5px;
+	}
+
+	.article {
+		margin-left: 10px;
+	}
+
+	.horni-menu {
+		height: 0px;
+	}
+
+	.hlavni {
+		background-position: left -270px top 0px;
+	}
+
+	.stin {
+		display: none;
+	}
+
+	.hlavni-nadpis {
+		padding-top: 25px;
+	}
+
+	.header {
+		box-shadow: gray 1px 10px 20px;
+	}
+
+}
+
+/*terapie*/
+.kapacita {
+	display: none;
+}
+
+@media screen and (max-width: 931px) {
+	#terapie-obr {
+		display: none;
+	}
+
+	.indi {
+		display: none;
+	}
+
+	.kapacita {
+		display: block;
+	}
+}
+
+/* navigacni talcitko v pripade mensiho rozliseni konec*/
+.objednani input,
+#text {
+	background-color: silver;
+}
+
+.indi {
+	float: right;
+	padding-right: 10%;
+	position: relative;
+	top: 20px;
+}
