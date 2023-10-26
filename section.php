@@ -1,4 +1,4 @@
-<div class="section">
-<?php include "aside.php";?>
 
-              
+    <!-- obsah stránky -->
+                <div class="section">
+                    <?php include "aside.php"; ?>

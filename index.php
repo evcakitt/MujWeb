@@ -2,13 +2,19 @@
 <html lang="cs">
 
 <head>
-    <meta http-equiv=Content-Type content="text/html; charset=Utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#94d462">
-    <meta name="author" content="Kateřina Novotná">
+    <meta name="author" content="Eva Svobodová">
+    <meta content="svobodovaevca@gmail.com" name="AuthorMail">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Jak uchopit svou sílu a žít svůj život">
-    <meta property="og:image" content="www.webik.cesta-zpet-k-sobe.9e.cz">
+    <meta property="og:image" content="http://cesta-k-sobe.euweb.cz/img/katerina_novotna_terapie.PNG">
+    <!-- Twitter Card data -->
+    <meta content="summary" name="twitter:card">
+    <!-- Open Graph data -->
+    <meta content="Cesta zpět k sobě" property="og:site_name">
+    <meta content="Cesta zpět k sobě" property="og:title">
     <title><?php
             $id = "14";
             include "redakce/funkce.php";
@@ -43,8 +49,8 @@
                                             odpoj($spojeni);
                                         }
                                         ?>">
-    <link rel="shortcut icon" href="flavico.ico">
-    <link rel="stylesheet" type="text/css" href="styl.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -52,7 +58,7 @@
     <?php include "horni_menu.php"; ?>
     <?php include "section.php" ?>
     <div class="article">
-        <!-- MISTO PRO VKLADNI -->
+        <!-- text vložený z databaze -->
         <?php
         /* Přrpojeni k DB, pokud neni chyba*/
         $spojeni = pripoj();
@@ -68,10 +74,12 @@
             odpoj($spojeni);
         }
         ?>
-        <!-- KONEC MISTA PRO VKLADANI -->
-        <!-- konec section -->
+
+        <!-- konec textu vloženého z databáze -->
+        <!-- konec obsahu stránky -->
     </div>
     </div>
+
     <?php include "paticka.php"; ?>
     </div>
 </body>

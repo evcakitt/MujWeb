@@ -9,6 +9,11 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="Jak uchopit svou sílu a žít svůj život">
   <meta property="og:image" content="http://cesta-k-sobe.euweb.cz/img/katerina_novotna_terapie.PNG">
+  <!-- Twitter Card data -->
+  <meta content="summary" name="twitter:card">
+  <!-- Open Graph data -->
+  <meta content="Cesta zpět k sobě" property="og:site_name">
+  <meta content="Cesta zpět k sobě" property="og:title">
   <title><?php
           $id = "19";
           include "redakce/funkce.php";
@@ -42,15 +47,15 @@
                                       odpoj($spojeni);
                                     }
                                     ?>">
-  <link rel="shortcut icon" href="flavico.ico">
-  <link rel="stylesheet" type="text/css" href="styl.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
   <?php include "hlavicka.php"; ?>
   <?php include "horni_menu.php"; ?>
   <?php include "section.php" ?>
-  <!-- MISTO PRO VKLADANI -->
+    <!-- text vložený z databáze -->
   <div class="article">
     <?php
     /* Pripojeni k DB, pokud neni chyba*/
@@ -121,33 +126,41 @@
 
 
     ?>
-    <div>
-      <form method="POST">
-        <div>
-          <label for="name">Jméno a příjmení *</label>
-        </div>
-        <div> <input name="name" type="text" id="name" maxlength="50"></div>
+    
+    <!-- konec textu vloženého z databáze-->
+     <!-- formulář - k odeslání -->
+      <div>
+        <form method="POST">
+          <div>
+            <label for="name">Jméno a příjmení *</label>
+          </div>
+          <div> <input name="name" type="text" id="name" maxlength="50"></div>
 
-        <div><label for="email">Váš email*</label></div>
-        <div><input name="email" type="email" id="email" placeholder="@" value="@" maxlength="50"></div>
-        <div>
-          <label for="spam">Nejsem robot 1+1 je... *</label>
-        </div>
-        <div><input name="spam" type="text" id="spam" maxlength="1"></div>
-        <div>
-          <label for="text1">Váš vzkaz *</label>
-        </div>
-        <div><textarea name="message" class="napis" id="text1"></textarea></div>
-        <div>
-          <button type="submit" class="odeslanif">Odeslat</button>
-        </div>
-      </form>
-    </div>
-    <!-- KONEC MISTA PRO VKLADANI -->
-    <!-- konec section -->
+          <div><label for="email">Váš email*</label></div>
+          <div><input name="email" type="email" id="email" placeholder="@" value="@" maxlength="50"></div>
+          <div>
+            <label for="spam">Nejsem robot 1+1 je... *</label>
+          </div>
+          <div><input name="spam" type="text" id="spam" maxlength="1"></div>
+          <div>
+            <label for="text1">Váš vzkaz *</label>
+          </div>
+          <div><textarea name="message" class="napis" id="text1"></textarea></div>
+          <div>
+            <button type="submit" class="odeslani-formulare">Odeslat</button>
+          </div>
+        </form>
+      </div>
+    <!-- Konec formuláře -->
+    </section>
+  
+    <!-- konec obsahu section -->
+    
   </div>
+    <!-- konec divu article -->
   </div>
   <?php include "paticka.php"; ?>
+    <!-- konec divu hlavní -->
   </div>
 
 </body>

@@ -9,6 +9,11 @@
   <meta property="og:type" content="article">
   <meta property="og:title" content="Jak uchopit svou sílu a žít svůj život">
   <meta property="og:image" content="http://cesta-k-sobe.euweb.cz/img/katerina_novotna_terapie.PNG">
+    <!-- Twitter Card data -->
+    <meta content="summary" name="twitter:card">
+    <!-- Open Graph data -->
+    <meta content="Cesta zpět k sobě" property="og:site_name">
+    <meta content="Cesta zpět k sobě" property="og:title">
   <title><?php
           $id = "23";
           include "redakce/funkce.php";
@@ -42,8 +47,8 @@
                                       odpoj($spojeni);
                                     }
                                     ?>">
-  <link rel="shortcut icon" href="flavico.ico">
-  <link rel="stylesheet" type="text/css" href="styl.css">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -83,10 +88,12 @@
   <!-- konec section -->
   </div>
   </div>
+  </div>
+  </section>
   <!-- vlozeni paticky stranky -->
   <?php include "paticka.php"; ?>
   </div>
-  </div>
+
 
 
 
